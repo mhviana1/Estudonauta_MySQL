@@ -33,6 +33,21 @@ add column profissao varchar(10);
 desc pessoas;
 select * from pessoas;
 
+alter table pessoas
+drop column profissao;
+desc pessoas;
+alter table pessoas
+add column profissao varchar(10) after nome;
+desc pessoas;
+
+alter table pessoas
+modify column profissao varchar(30);
+
+alter table pessoas
+rename to garfanhotos;
+
+
+
 
 
 
